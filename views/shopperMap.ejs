@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head %>
+</head>
+<body>
+
+  <section class="section">
+
+    <div class="container">
+
+      <div id="mapid"></div>
+
+      <script>
+
+        // Current latitute and langitude values
+        var latlng = new L.LatLng(24.5246323,54.4323035);
+
+      	var mymap = L.map('mapid').setView(latlng, 15);
+
+      	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      		maxZoom: 18,
+      		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+      			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      		id: 'mapbox.streets'
+      	}).addTo(mymap);
+
+      	var popup = L.popup();
+
+        // Add new marker
+        L.marker([24.5246323,54.4323035]).addTo(mymap)
+        .bindPopup('Shop')
+        .openPopup();
+
+      	mymap.on('click', onMapClick);
+
+      </script>
+
+
+    </div>
+
+  </section>
+</body>
+<% include partials/script %>
+</html>

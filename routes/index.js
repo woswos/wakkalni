@@ -14,4 +14,8 @@ router.get('/storeList', function(req, res, next) {
   res.render('storeList', {page:'Store List', menuId:'storeList'});
 });
 
+router.get('/shopperMap', function(req, res, next) {
+  res.render('shopperMap', {page:'Shopper Map', menuId:'shopperMap'});
+});
+
 module.exports = router;
