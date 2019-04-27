@@ -9,18 +9,11 @@
 
   <div class="container">
 
-
-
-    <!-- Info text
-    <div class="content">
-      <h4><%= page %></h4>
-    </div>
-    -->
-
     <div class="box is-shadowless" id="upload-box">
       <div id="upload-box-text">
         <i class="fas fa-camera" aria-hidden="true"></i>
         Click here to upload a photo
+<<<<<<< HEAD:views/storeSubmit.ejs
         <!-- <input type="file" accept="image/*;capture=camera"> -->
         <form action="#">
           <input type="file" id="barcode" placeholder="Filename" size="100" onchange="previewFile()"/>
@@ -28,6 +21,9 @@
           <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
         </form>
         <!--  -->
+=======
+        <input type="file" accept="image/*;capture=camera">
+>>>>>>> 5f2d8084391698db8a7afe6d1a78ea94080e3d90:views/storePostNewItem.ejs
       </div>
     </div>
 
@@ -56,10 +52,16 @@
       </div>
     </div>
 
+    <div class="field">
+      <label class="label">Additional notes</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="">
+      </div>
+    </div>
+
     <div class="control">
       <button class="button is-fullwidth" id="submit-button" onclick='buttonClick("submit-button")' >Submit</button>
     </div>
-
 
   </div>
   </section>

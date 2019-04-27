@@ -6,8 +6,16 @@ router.get('/', function(req, res, next) {
   res.render('index', {page:'index', menuId:'index'});
 });
 
-router.get('/store', function(req, res, next) {
-  res.render('storeSubmit', {page:'store', menuId:'storeSubmit'});
+router.get('/storePostNewItem', function(req, res, next) {
+  res.render('storePostNewItem', {page:'Post New Item', menuId:'storePostNewItem'});
+});
+
+router.get('/storeList', function(req, res, next) {
+  res.render('storeList', {page:'Store List', menuId:'storeList'});
+});
+
+router.get('/shopperMap', function(req, res, next) {
+  res.render('shopperMap', {page:'Shopper Map', menuId:'shopperMap'});
 });
 
 module.exports = router;
