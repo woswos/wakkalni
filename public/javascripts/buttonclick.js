@@ -2,8 +2,6 @@ function buttonClick(buttonId) {
   document.getElementById(buttonId).className = "button is-fullwidth is-success is-loading";
 }
 
-
-
 jQuery(document).ready(function($)
 {
   $("[class*=expandable]").click(function()

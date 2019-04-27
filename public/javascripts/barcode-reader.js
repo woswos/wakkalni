@@ -29,6 +29,8 @@ barcode_button.onclick = () => {
     console.log(`Code : ${code}`)
     // alert(`Code : ${code}`) // eslint-disable-line
     $("div.preview-barcode").append('<label class="label">Barcode: ' + `${code}` + '</label>')
+    $("div.preview-barcode").append('<label class="label">Food type: Chicken</label>')
+    $("div.preview-barcode").append('<label class="label">How can you tell if it\'s gone bad?</label>')
   })
 
   

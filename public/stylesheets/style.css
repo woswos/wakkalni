@@ -11,17 +11,6 @@
   margin-right: auto;
 }
 
-#store-button-left {
-  position: absolute;
-  margin-top: 20vh;
-  left: 50px;
-}
-
-#user-button-right{
-  position: absolute;
-  right: 50px;
-  margin-top: 20vh;
-}
 
 #upload-box {
   height: auto;

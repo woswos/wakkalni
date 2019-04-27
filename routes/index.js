@@ -19,4 +19,8 @@ router.get('/shopperMap', function(req, res, next) {
   res.render('shopperMap', {page:'Shopper Map', menuId:'shopperMap'});
 });
 
+router.get('/scanBarcode', function(req, res, next) {
+  res.render('scanBarcode', {page:'Scan Barcode', menuId:'scanBarcode'});
+});
+
 module.exports = router;

@@ -1,0 +1,45 @@
+{
+    "foodlist": [
+        {
+            "item": "banana",
+            "store name": "NYUAD convenient store",
+            "price": "10",
+            "added date": "27/04/2019",
+            "expiry date": "28/04/2019",
+            "image path": "images/banana1.jpg"
+        },
+        {
+            "item": "egg",
+            "store name": "Spinneys",
+            "price": "12",
+            "added date": "27/04/2019",
+            "expiry date": "29/04/2019",
+            "image path": "images/eggs1.jpg"
+        }, 
+        {
+            "item": "orange",
+            "store name": "Waitrose",
+            "price": "25",
+            "added date": "26/04/2019",
+            "expiry date": "28/04/2019",
+            "image path": "images/orange.jpg"
+        }, 
+        {
+            "item": "chicken",
+            "store name": "Almaya Supermarket",
+            "price": "40",
+            "added date": "27/04/2019",
+            "expiry date": "30/04/2019",
+            "image path": "images/chicken1.jpg"
+        }, 
+        {
+            "item": "chicken",
+            "store name": "Almaya Supermarket",
+            "price": "40",
+            "added date": "27/04/2019",
+            "expiry date": "30/04/2019",
+            "image path": "images/banana2.jpg"
+        }, 
+        
+    ]
+}
