@@ -1,12 +1,12 @@
 #upload-box {
-  height: 100px;
+  height: auto;
   width: 100%;
   border:3px dotted #666;
 }
 
 #upload-box-text {
   text-align: center;
-  padding-top: 15px;
+
 }
 
 #list-box {
