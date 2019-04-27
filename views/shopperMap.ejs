@@ -5,11 +5,13 @@
 </head>
 <body>
 
-  <section class="section">
+  <section class="section no-padding">
 
     <div class="container">
 
+  <div class="box" id="map-box">
       <div id="mapid"></div>
+  </div>
 
       <script>
 
@@ -30,13 +32,12 @@
 
         // Add new marker
         L.marker([24.5246323,54.4323035]).addTo(mymap)
-        .bindPopup('Shop')
+        .bindPopup('<p><strong>Banana</strong><br>10 AED<br>Added on: 27/04/2019<br>Expiry date: 28/04/2019<br>Store Name: Name</p>')
         .openPopup();
 
       	mymap.on('click', onMapClick);
 
       </script>
-
 
     </div>
 
