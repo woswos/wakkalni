@@ -5,26 +5,50 @@
 </head>
 <body>
 
+
   <section class="section">
+      <div class="container">
+          <div class="content">
+            <h4 id="logo-text">
+                Wakkalni
+                <br>
+                Food Savour
+            </h4>
+          </div>
 
-  <div class="container">
+          <div class="content">
+              <figure class="image is-128x128" id="logo">
+                <img src="images/logo.png" alt="Image">
+              </figure>
+          </div>
 
-    <div class="field">
+
+          <div class="buttons is-right" id="store-button-left">
+            <a class="button is-link is-outlined is-right" onclick="window.location = '/storeList'">&nbsp;&nbsp;&nbsp;Store&nbsp;&nbsp;&nbsp;</a>
+          </div>
+
+          <div class="buttons is-left" id="user-button-right">
+            <a class="button is-link is-outlined" onclick="window.location = '/shopperMap'">&nbsp;&nbsp;&nbsp;User&nbsp;&nbsp;&nbsp;</a>
+          </div>
+
+        </div>
+    </section>
+
+<!--
+    <div class="content">
       <button class="button is-fullwidth" onclick="window.location = '/storePostNewItem'" >Store - Post New Item</button>
     </div>
 
-    <div class="field">
+    <div class="content">
       <button class="button is-fullwidth" onclick="window.location = '/storeList'" >Store - Browse Items</button>
     </div>
 
 
-    <div class="field">
+    <div class="content">
       <button class="button is-fullwidth" onclick="window.location = '/shopperMap'" >Shopper Map</button>
     </div>
+-->
 
-  </div>
-
-  </section>
 </body>
 <% include partials/script %>
 </html>

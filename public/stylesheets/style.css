@@ -1,3 +1,28 @@
+#logo-text {
+  text-align: center;
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: darkblue;
+  margin-top: 50px;
+}
+
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#store-button-left {
+  position: absolute;
+  margin-top: 20vh;
+  left: 50px;
+}
+
+#user-button-right{
+  position: absolute;
+  right: 50px;
+  margin-top: 20vh;
+}
+
 #upload-box {
   height: auto;
   width: 100%;
@@ -6,7 +31,6 @@
 
 #upload-box-text {
   text-align: center;
-
 }
 
 #list-box {
