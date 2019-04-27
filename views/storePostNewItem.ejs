@@ -9,19 +9,11 @@
 
   <div class="container">
 
-
-
-    <!-- Info text
-    <div class="content">
-      <h4><%= page %></h4>
-    </div>
-    -->
-
     <div class="box is-shadowless" id="upload-box">
       <div id="upload-box-text">
         <i class="fas fa-camera" aria-hidden="true"></i>
         Click here to upload a photo
-        <!--<input type="file" accept="image/*;capture=camera">-->
+        <input type="file" accept="image/*;capture=camera">
       </div>
     </div>
 
@@ -46,10 +38,16 @@
       </div>
     </div>
 
+    <div class="field">
+      <label class="label">Additional notes</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="">
+      </div>
+    </div>
+
     <div class="control">
       <button class="button is-fullwidth" id="submit-button" onclick='buttonClick("submit-button")' >Submit</button>
     </div>
-
 
   </div>
 

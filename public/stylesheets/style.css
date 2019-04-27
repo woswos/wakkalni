@@ -8,3 +8,8 @@
   text-align: center;
   padding-top: 15px;
 }
+
+#list-box {
+  height: 140px;
+  width: 100%;
+}
