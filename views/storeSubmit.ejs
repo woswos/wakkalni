@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <% include partials/head %>
+    
 </head>
 <body>
-
   <section class="section">
 
   <div class="container">
@@ -21,8 +21,18 @@
       <div id="upload-box-text">
         <i class="fas fa-camera" aria-hidden="true"></i>
         Click here to upload a photo
-        <!--<input type="file" accept="image/*;capture=camera">-->
+        <!-- <input type="file" accept="image/*;capture=camera"> -->
+        <form action="#">
+          <input type="file" id="barcode" placeholder="Filename" size="100" onchange="previewFile()"/>
+          <button class="barcode-button" data-type="code-128">Upload</button>
+          <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
+        </form>
+        <!--  -->
       </div>
+    </div>
+
+    <div class="preview-barcode">
+        <img src="" id="barcode-img" height="100">
     </div>
 
     <div class="field">
@@ -52,7 +62,6 @@
 
 
   </div>
-
   </section>
 </body>
 <% include partials/script %>
