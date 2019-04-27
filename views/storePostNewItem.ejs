@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <% include partials/head %>
-    
 </head>
 <body>
   <section class="section">
@@ -13,22 +12,17 @@
       <div id="upload-box-text">
         <i class="fas fa-camera" aria-hidden="true"></i>
         Click here to upload a photo
-<<<<<<< HEAD:views/storeSubmit.ejs
         <!-- <input type="file" accept="image/*;capture=camera"> -->
         <form action="#">
           <input type="file" id="barcode" placeholder="Filename" size="100" onchange="previewFile()"/>
           <button class="barcode-button" data-type="code-128">Upload</button>
           <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
         </form>
-        <!--  -->
-=======
-        <input type="file" accept="image/*;capture=camera">
->>>>>>> 5f2d8084391698db8a7afe6d1a78ea94080e3d90:views/storePostNewItem.ejs
       </div>
     </div>
 
     <div class="preview-barcode">
-        <img src="" id="barcode-img" height="100">
+        <img src="" id="barcode-img" height="10px">
     </div>
 
     <div class="field">
