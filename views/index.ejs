@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <% include partials/head %>
+    <% include partials/head %>
 </head>
 <body>
-<div class="container-fluid bg-3 text-center">
-  <h3><%= page %></h3><br>
-  <div class="columns">
-    <div class="column">
-      First page
+
+  <section class="section">
+
+  <div class="container">
+
+    <div class="field">
+      <button class="button is-fullwidth" onclick="window.location = '/store'" >Store Page</button>
     </div>
+
+    <div class="field">
+      <button class="button is-fullwidth" onclick="window.location = '/shopper'" >Shopper Page</button>
+    </div>
+
   </div>
-</div>
+
+  </section>
 </body>
 <% include partials/script %>
 </html>

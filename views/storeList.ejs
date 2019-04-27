@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head %>
+</head>
+<body>
+
+  <section class="section">
+
+  <div class="container">
+
+
+
+    <!-- Info text
+    <div class="content">
+      <h4><%= page %></h4>
+    </div>
+    -->
+
+    <div class="box is-shadowless" id="upload-box">
+      <div id="upload-box-text">
+        <i class="fas fa-camera" aria-hidden="true"></i>
+        Click here to upload a photo
+        <!--<input type="file" accept="image/*;capture=camera">-->
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Name of the product</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Banana">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Price (AED)</label>
+      <div class="control">
+        <input class="input" type="number" placeholder="10">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Expiry date</label>
+      <div class="control">
+        <input class="input" type="date" placeholder="">
+      </div>
+    </div>
+
+    <div class="control">
+      <button class="button is-fullwidth" id="submit-button" onclick='buttonClick("submit-button")' >Submit</button>
+    </div>
+
+
+  </div>
+
+  </section>
+</body>
+<% include partials/script %>
+</html>

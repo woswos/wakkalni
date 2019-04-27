@@ -1,8 +1,10 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#upload-box {
+  height: 100px;
+  width: 100%;
+  border:3px dotted #666;
 }
 
-a {
-  color: #00B7FF;
+#upload-box-text {
+  text-align: center;
+  padding-top: 15px;
 }
