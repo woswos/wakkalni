@@ -38,4 +38,11 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.post('/additem', (req, res) => {
+  const name = req.body.name
+  //...
+  console.log(name)
+  res.end()
+})
+
 module.exports = app;

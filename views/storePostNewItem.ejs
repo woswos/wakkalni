@@ -34,38 +34,39 @@
     </div>
 
 
+    <form method="POST" action="/additem">
+        <div class="field">
+          <label class="label">Name of the product</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Banana" name="name">
+          </div>
+        </div>
 
-    <div class="field">
-      <label class="label">Name of the product</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Banana">
-      </div>
-    </div>
+        <div class="field">
+          <label class="label">Price (AED)</label>
+          <div class="control">
+            <input class="input" type="number" placeholder="10" name="price">
+          </div>
+        </div>
 
-    <div class="field">
-      <label class="label">Price (AED)</label>
-      <div class="control">
-        <input class="input" type="number" placeholder="10">
-      </div>
-    </div>
+        <div class="field">
+          <label class="label">Expiry date</label>
+          <div class="control">
+            <input class="input" type="date" placeholder="" name="expiry-date">
+          </div>
+        </div>
 
-    <div class="field">
-      <label class="label">Expiry date</label>
-      <div class="control">
-        <input class="input" type="date" placeholder="">
-      </div>
-    </div>
+        <div class="field">
+          <label class="label">Additional notes</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="" name="notes">
+          </div>
+        </div>
 
-    <div class="field">
-      <label class="label">Additional notes</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="">
-      </div>
-    </div>
-
-    <div class="control">
-      <button class="button is-fullwidth" id="submit-button" onclick='buttonClick("submit-button")' >Submit</button>
-    </div>
+        <div class="control">
+          <button class="button is-fullwidth" id="submit-button" onclick='buttonClick("submit-button")' type="submit">Submit</button>
+        </div>
+    </form>
 
   </div>
   </section>
