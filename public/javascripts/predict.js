@@ -1,12 +1,6 @@
-
-// import clarifai_app from "./../../clarifai_app.js"
-const CLARIFAI = require('clarifai')
-
-var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
-
-var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
-
-var clarifai_app = new CLARIFAI.App({apiKey: myClarifaiApiKey});
+// import { App } from 'clarifai';
+// var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
+// var clarifai_app = new App({apiKey: myClarifaiApiKey});
 /*
   Purpose: Pass information to other helper functions after a user clicks 'Predict'
   Args:
@@ -38,6 +32,8 @@ function predict_click(value, source) {
     value - Either {url : urlValue} or { base64 : base64Value }
 */
 function doPredict(value) {
+  import clarifai_app from "./../../app.js"
+
   clarifai_app.models.predict(FOOD_MODEL, value).then(function(response) {
       if(response.rawData.outputs[0].data.hasOwnProperty("concepts")) {
         var tag = response.rawData.outputs[0].data.concepts[0].name;

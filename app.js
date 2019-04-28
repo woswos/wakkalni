@@ -43,4 +43,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-// module.exports = clarifai_app;
+// export default clarifai_app;

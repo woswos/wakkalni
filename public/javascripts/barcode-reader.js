@@ -1,3 +1,6 @@
+import * as Clarifai from 'clarifai'
+var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
+var app = new Clarifai.App({apiKey: myClarifaiApiKey});
 
 function previewFile() {
   var file = document.querySelector("input[type=file]").files[0];
