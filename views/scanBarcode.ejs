@@ -14,24 +14,22 @@
         <div class="content">
           <div id="upload-box-text">
 
-            <form action="#">
-              <div class="field">
-                Scan barcode: <input type="file" id="barcode" placeholder="Filename" size="100" onchange="previewFile()" />
-              </div>
+            <div class="field">
+            Scan barcode: <input type="file" id="barcode" placeholder="Filename" size="100" onchange="previewFile()"/>
+            </div>
 
-              <div class="field">
+            <div class="field">
                 <div class="preview-barcode">
-                  <img src="" id="barcode-img" height="0px">
+                    <img src="" id="barcode-img" height="0px">
                 </div>
-              </div>
+            </div>
 
-              <div class="field">
-                <button class="barcode-button" data-type="code-128" onclick="showInfo()">Upload</button>
-              </div>
+            <div class="field">
+                <button class="barcode-button" id="fresh-button" data-type="code-128" onclick="showInfo()">Is it fresh?</button>
+            </div>
 
-              <div class="food-info"></div>
-              <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
-            </form>
+            <div class="food-info"></div>
+            <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
 
           </div>
         </div>

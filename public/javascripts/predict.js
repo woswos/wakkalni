@@ -1,6 +1,6 @@
-// import { App } from 'clarifai';
-// var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
-// var clarifai_app = new App({apiKey: myClarifaiApiKey});
+import { App } from 'clarifai';
+var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
+var clarifai_app = new App({apiKey: myClarifaiApiKey});
 /*
   Purpose: Pass information to other helper functions after a user clicks 'Predict'
   Args:
