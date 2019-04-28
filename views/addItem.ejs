@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <% include partials/head %>
+  <% include partials/head %>
 </head>
+
 <body>
   <section class="section">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="box is-shadowless" id="upload-box">
-      <div class="content">
-        <div id="upload-box-text">
+      <div class="box is-shadowless" id="upload-box">
+        <div class="content">
+          <div id="upload-box-text">
 
-          <form action="#">
-            <div class="field">
-              <input type="file" id="food-file" placeholder="Filename" size="100" onchange="previewFile()"/>
-            </div>
-
-            <div class="field">
-              <div class="preview-food">
-                  <img src="" id="food-img" height="0px">
+            <form action="#">
+              <div class="field">
+                <input type="file" id="food-file" placeholder="Filename" size="100" onchange="previewFile()" />
               </div>
-            </div>
 
-            <!-- <div class="field">
+              <div class="field">
+                <div class="preview-food">
+                  <img src="" id="food-img" height="0px">
+                </div>
+              </div>
+
+              <!-- <div class="field">
               <button class="food-button" data-type="code-128">Upload</button>
             </div> -->
-            <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
-          </form>
+              <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
+            </form>
 
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <form method="POST" action="/submit/additem">
+      <form method="POST" action="/submit/additem">
         <div class="field">
           <label class="label">Name of the product</label>
           <div class="control">
@@ -66,10 +68,12 @@
         <div class="control">
           <button class="button is-fullwidth" id="submit-button" onclick='buttonClick("submit-button")' type="submit">Submit</button>
         </div>
-    </form>
+      </form>
 
-  </div>
+    </div>
   </section>
+  <% include partials/footer2 %>
 </body>
 <% include partials/script %>
+
 </html>

@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <% include partials/head %>
+  <% include partials/head %>
 </head>
+
 <body>
   <section class="section">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="box is-shadowless" id="upload-box">
-      <div class="content">
-        <div id="upload-box-text">
+      <div class="box is-shadowless" id="upload-box">
+        <div class="content">
+          <div id="upload-box-text">
 
-          <form action="#">
-            <div class="field">
-              Scan barcode: <input type="file" id="barcode" placeholder="Filename" size="100" onchange="previewFile()"/>
-            </div>
-
-            <div class="field">
-              <div class="preview-barcode">
-                  <img src="" id="barcode-img" height="0px">
+            <form action="#">
+              <div class="field">
+                Scan barcode: <input type="file" id="barcode" placeholder="Filename" size="100" onchange="previewFile()" />
               </div>
-            </div>
 
-            <div class="field">
-              <button class="barcode-button" data-type="code-128" onclick="showInfo()">Upload</button>
-            </div>
+              <div class="field">
+                <div class="preview-barcode">
+                  <img src="" id="barcode-img" height="0px">
+                </div>
+              </div>
 
-            <div class="food-info"></div>
-            <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
-          </form>
+              <div class="field">
+                <button class="barcode-button" data-type="code-128" onclick="showInfo()">Upload</button>
+              </div>
 
+              <div class="food-info"></div>
+              <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
+            </form>
+
+          </div>
         </div>
       </div>
+
     </div>
-
-
-
-  </div>
   </section>
+
+  <% include partials/footer %>
 </body>
 <% include partials/script %>
+
 </html>
