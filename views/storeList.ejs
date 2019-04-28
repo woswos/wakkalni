@@ -5,103 +5,119 @@
 </head>
 <body>
 
+  <div class="box" id="head">
+    <h3 style="color: white; margin-left:3px;"><b>Store Name</b></h3>
+  </div>
+
   <section class="section">
 
     <div class="container">
 
-      <div class="box expandable" id="1">
-        <table>
-          <tr>
-            <td>
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-96x96">
-                    <img src="images/default.png" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Banana</strong>
-                      <br>
-                      10 AED
-                      <br>
-                      Added on: 27/04/2019
-                      <br>
-                      Expiry date: 28/04/2019
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div id="expandable-box-expanded-1" style="display: none;">
-                <div class="content">
-                  Additional notes: something something
-                </div>
-
-                <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="
-                https://www.openstreetmap.org/export/embed.html?bbox=54.42871570587159%2C24.519296722160938%2C54.440302848815925%2C24.528013284064542&amp;layer=mapnik
-                " style="border: 1px solid black"></iframe>
-
+      <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <img src="images/banana1.jpg" alt="Image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Banana</strong>
+                  <br>
+                  <del>13 AED</del>
+                  <br>
+                  10 AED
+                  <br>
+                  Added on: 27/04/2019
+                  <br>
+                  Expiry date: 28/04/2019
+                </p>
               </div>
-            </td>
-          </tr>
-        </table>
+            </div>
+          </article>
+      </div>
+
+      <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <img src="images/eggs1.jpg" alt="Image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Eggs</strong>
+                  <br>
+                  <del>15 AED</del>
+                  <br>
+                  12 AED
+                  <br>
+                  Added on: 27/04/2019
+                  <br>
+                  Expiry date: 29/04/2019
+                </p>
+              </div>
+            </div>
+          </article>
       </div>
 
 
-      <div class="box expandable" id="2">
-        <table>
-          <tr>
-            <td>
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-96x96">
-                    <img src="images/default.png" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Banana</strong>
-                      <br>
-                      10 AED
-                      <br>
-                      Added on: 27/04/2019
-                      <br>
-                      Expiry date: 28/04/2019
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div id="expandable-box-expanded-2" style="display: none;">
-                <div class="content">
-                  Additional notes: something something
-                </div>
-
-                <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="
-                https://www.openstreetmap.org/export/embed.html?bbox=54.42871570587159%2C24.519296722160938%2C54.440302848815925%2C24.528013284064542&amp;layer=mapnik
-                " style="border: 1px solid black"></iframe>
-
+      <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <img src="images/orange.jpg" alt="Image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Oranges</strong>
+                  <br>
+                    <del>30 AED</del>
+                  <br>
+                  25 AED
+                  <br>
+                  Added on: 26/04/2019
+                  <br>
+                  Expiry date: 28/04/2019
+                </p>
               </div>
-            </td>
-          </tr>
-        </table>
+            </div>
+          </article>
       </div>
 
+
+      <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <img src="images/chicken1.jpeg" alt="Image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Chicken</strong>
+                  <br>
+                    <del>55 AED</del>
+                  <br>
+                  40 AED
+                  <br>
+                  Added on: 27/04/2019
+                  <br>
+                  Expiry date: 28/04/2019
+                </p>
+              </div>
+            </div>
+          </article>
+      </div>
 
     </div>
-
   </section>
+<% include partials/footer %>
 </body>
 <% include partials/script %>
 </html>
