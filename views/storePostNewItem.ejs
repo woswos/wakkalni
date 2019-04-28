@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <% include partials/head %>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/static.mlh.io/blog-code/2018-02-clarifai-nutrition-app/wolfram.js"></script>
+    <script type="text/javascript" src="javascripts/predict.js"></script>
 </head>
 <body>
   <section class="section">
@@ -13,8 +17,10 @@
         <div id="upload-box-text">
 
           <form action="#">
-            <div class="field">
+            <div class="field" clconst Clarifai = require('clarifai');
+            ass="wrapper">
               <input type="file" id="food-file" placeholder="Filename" size="100" onchange="previewFile()"/>
+              <button onclick="predict_click($('#food-file').val(), 'file'); return false;">Get my Nutritional Breakdown!</button>
             </div>
 
             <div class="field">
@@ -43,9 +49,16 @@
         </div>
 
         <div class="field">
-          <label class="label">Price (AED)</label>
+          <label class="label">Original Price (AED)</label>
           <div class="control">
-            <input class="input" type="number" placeholder="10" name="price">
+            <input class="input" type="number" placeholder="10" name="originalPrice">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">New Price (AED)</label>
+          <div class="control">
+            <input class="input" type="number" placeholder="10" name="newPrice">
           </div>
         </div>
 
