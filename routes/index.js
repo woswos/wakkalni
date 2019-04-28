@@ -12,7 +12,7 @@ router.get('/storePostNewItem', function(req, res, next) {
 });
 
 router.get('/storeList', function(req, res, next) {
-  res.render('storeList', {page:'Store List', menuId:'storeList'});
+  res.render('storeList2', {page:'Store List', menuId:'storeList'});
 });
 
 router.get('/shopperMap', function(req, res, next) {
@@ -22,5 +22,7 @@ router.get('/shopperMap', function(req, res, next) {
 router.get('/scanBarcode', function(req, res, next) {
   res.render('scanBarcode', {page:'Scan Barcode', menuId:'scanBarcode'});
 });
+
+router.post('/')
 
 module.exports = router;
