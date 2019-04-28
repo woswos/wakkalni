@@ -14,3 +14,5 @@ $ nodemon start
 ```
 
 Now, wakkalni should be running at `http://localhost:3000`.
+
+Full slide deck [here](./slides.pdf).
