@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "browserify": "^16.2.3",
     "bulma": "^0.7.4",
     "clarifai": "^2.9.0",
     "cookie-parser": "^1.4.4",
@@ -14,6 +15,7 @@
     "express": "^4.16.4",
     "http-errors": "~1.6.2",
     "javascript-barcode-reader": "^0.4.12",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "require": "^2.4.20"
   }
 }
