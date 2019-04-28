@@ -1,5 +1,5 @@
-# wakkalni
-NYUAD Hack for Social Good in the Arab World
+# wakkalni (Food Savour)
+_NYUAD Hack for Social Good in the Arab World_
 
 ![drawing](./static/image/wakkalni.png)
 
