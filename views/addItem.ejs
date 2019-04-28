@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <% include partials/head %>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -7,14 +8,15 @@
     <script type="text/javascript" src="https://s3.amazonaws.com/static.mlh.io/blog-code/2018-02-clarifai-nutrition-app/wolfram.js"></script>
     <!-- <script type="text/javascrip" src="javascripts/predict.js"></script> -->
 </head>
+
 <body>
   <section class="section">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="box is-shadowless" id="upload-box">
-      <div class="content">
-        <div id="upload-box-text">
+      <div class="box is-shadowless" id="upload-box">
+        <div class="content">
+          <div id="upload-box-text">
 
           <form action="#">
             <div class="field" clconst Clarifai = require('clarifai');
@@ -23,24 +25,24 @@
               <button onclick="predict_click($('#food-file').val(), 'file'); return false;">Get my Nutritional Breakdown!</button>
             </div>
 
-            <div class="field">
-              <div class="preview-food">
+              <div class="field">
+                <div class="preview-food">
                   <img src="" id="food-img" height="0px">
+                </div>
               </div>
-            </div>
 
-            <!-- <div class="field">
+              <!-- <div class="field">
               <button class="food-button" data-type="code-128">Upload</button>
             </div> -->
-            <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
-          </form>
+              <!-- <button onclick="read_barcode($('#barcode').val(), 'file'); return false;">Upload</button> -->
+            </form>
 
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <form method="POST" action="/submit/additem">
+      <form method="POST" action="/submit/additem">
         <div class="field">
           <label class="label">Name of the product</label>
           <div class="control">
@@ -79,10 +81,12 @@
         <div class="control">
           <button class="button is-fullwidth" id="submit-button" onclick='buttonClick("submit-button")' type="submit">Submit</button>
         </div>
-    </form>
+      </form>
 
-  </div>
+    </div>
   </section>
+  <% include partials/footer2 %>
 </body>
 <% include partials/script %>
+
 </html>

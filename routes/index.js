@@ -7,16 +7,16 @@ router.get('/', function(req, res, next) {
   res.render('index', {page:'index', menuId:'index'});
 });
 
-router.get('/storePostNewItem', function(req, res, next) {
-  res.render('storePostNewItem', {page:'Post New Item', menuId:'storePostNewItem'});
+router.get('/addItem', function(req, res, next) {
+  res.render('addItem', {page:'Add Item', menuId:'addItem'});
+});
+
+router.get('/userList', function(req, res, next) {
+  res.render('userList', {page:'User List', menuId:'userList'});
 });
 
 router.get('/storeList', function(req, res, next) {
-  res.render('storeList2', {page:'Store List', menuId:'storeList'});
-});
-
-router.get('/shopperMap', function(req, res, next) {
-  res.render('shopperMap', {page:'Shopper Map', menuId:'shopperMap'});
+  res.render('storeList', {page:'Store List', menuId:'storeList'});
 });
 
 router.get('/scanBarcode', function(req, res, next) {

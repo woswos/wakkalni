@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <% include partials/head %>
+  <% include partials/head %>
 </head>
+
 <body>
 
 
   <section class="section">
-      <div class="container">
-          <div class="content">
-            <h4 id="logo-text">
-                Wakkalni
-                <br>
-                Food Savour
-            </h4>
-          </div>
+    <div class="container">
+      <div class="content">
+        <h4 id="logo-text">
+          Wakkalni
+          <br>
+          Food Savour
+        </h4>
+      </div>
 
-          <div class="content">
-              <figure class="image is-128x128" id="logo">
-                <img src="images/logo.png" alt="Image">
-              </figure>
-          </div>
+      <div class="content">
+        <figure class="image is-128x128" id="logo">
+          <img src="images/logo.png" alt="Image">
+        </figure>
+      </div>
 
 
-          <div class="buttons is-centered">
-            <a class="button is-link is-outlined is-right" onclick="window.location = '/storeList'">&nbsp;&nbsp;&nbsp;Store&nbsp;&nbsp;&nbsp;</a>
-          </div>
+      <div class="buttons is-centered">
+        <a class="button is-link is-outlined is-right is-fullwidth" onclick="window.location = '/userList'">User</a>
+      </div>
 
-          <div class="buttons is-centered">
-            <a class="button is-link is-outlined" onclick="window.location = '/storePostNewItem'">&nbsp;&nbsp;&nbsp;AddItem&nbsp;&nbsp;&nbsp;</a>
-          </div>
+      <div class="buttons is-centered">
+        <a class="button is-link is-outlined is-fullwidth" onclick="window.location = '/addItem'">Store</a>
+      </div>
 
-          <div class="buttons is-centered">
-            <a class="button is-link is-outlined" onclick="window.location = '/shopperMap'">&nbsp;&nbsp;&nbsp;User&nbsp;&nbsp;&nbsp;</a>
-          </div>
+    </div>
+  </section>
 
-          <div class="buttons is-centered">
-            <a class="button is-link is-outlined" onclick="window.location = '/scanBarcode'">&nbsp;&nbsp;&nbsp;Barcode&nbsp;&nbsp;&nbsp;</a>
-          </div>
-
-        </div>
-    </section>
-
-<!--
+  <!--
     <div class="content">
       <button class="button is-fullwidth" onclick="window.location = '/storePostNewItem'" >Store - Post New Item</button>
     </div>
@@ -59,4 +53,5 @@
 
 </body>
 <% include partials/script %>
+
 </html>

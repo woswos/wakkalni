@@ -1,16 +1,36 @@
-.foot {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: purple;
-   color: white;
-   text-align: center;
-   height: 50px;
+#foot {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: purple;
+  color: white;
+  border-radius: 0;
 }
 
-.a {
+#footer-inside {
+  margin-left: 5.5vh;
+  background-color: purple;
   color: white;
+  border-radius: 0;
+}
+
+#footer-inside2 {
+  margin-left: 4vh;
+  background-color: purple;
+  color: white;
+  border-radius: 0;
+}
+
+#head {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  margin-top: 0px;
+  width: 100%;
+  background-color: purple;
+  color: white;
+  border-radius: 0;
 }
 
 #logo-text {
@@ -29,7 +49,7 @@
 #upload-box {
   height: auto;
   width: 100%;
-  border:3px dotted #666;
+  border: 3px dotted #666;
 }
 
 #upload-box-text {
@@ -43,14 +63,28 @@
 
 #mapid {
   width: 100%;
-  height: 90vh;
+  height: 250px;
+  position: fixed;
+  top: 0px;
 }
 
 #map-box {
   height: auto;
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
   padding: 0px;
+}
+
+#list-section {
+  z-index: -1;
+  margin-top: 230px;
+}
+
+#map-section {
+  position: relative;
+  z-index: 2;
+  top: 0px;
+  margin-top: 0px;
 }
 
 .no-padding {

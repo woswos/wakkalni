@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include partials/head %>
+</head>
+
+<body>
+
+  <section class="section no-padding" id="map-section">
+
+    <div class="container">
+
+      <div class="box" id="map-box">
+        <div id="mapid"></div>
+      </div>
+
+      <script>
+        // Current latitute and langitude values
+        var latlng = new L.LatLng(24.5246323, 54.4323035);
+
+        // Here 15 is used to set magnification, it can be adjusted based on the requirement
+        var mymap = L.map('mapid').setView(latlng, 10);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+          maxZoom: 14,
+          id: 'mapbox.streets'
+        }).addTo(mymap);
+
+        var popup = L.popup();
+
+        // Add new marker
+        L.marker([24.5246323, 54.4323035]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/banana1.jpg" alt="Image"></figure><p><strong>Banana</strong><br>10 AED<br>Added on: 27/04/2019<br>Expiry date: 28/04/2019<br>Store Name: NYUAD convenient store</p>')
+
+        L.marker([24.538922, 54.424619]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/eggs1.jpg" alt="Image"></figure><p><strong>Eggs</strong><br>12 AED<br>Added on: 27/04/2019<br>Expiry date: 29/04/2019<br>Store Name: Spinneys</p>')
+        // .openPopup();
+
+        L.marker([24.549910, 54.450581]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/orange.jpg" alt="Image"></figure><p><strong>Oranges</strong><br>25 AED<br>Added on: 26/04/2019<br>Expiry date: 28/04/2019<br>Store Name: Waitrose</p>')
+        // .openPopup();
+
+        L.marker([24.511210, 54.406530]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/chicken1.jpeg" alt="Image"></figure><p><strong>Chicken</strong><br>40 AED<br>Added on: 27/04/2019<br>Expiry date: 30/04/2019<br>Store Name: Almaya Supermarket</p>')
+        // .openPopup();
+
+        L.marker([24.503859, 54.407059]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/banana2.jpeg" alt="Image"></figure><p><strong>Banana</strong><br>12 AED<br>Added on: 27/04/2019<br>Expiry date: 30/04/2019<br>Store Name: Allday Minimart</p>')
+        // .openPopup();
+
+        L.marker([24.519048, 54.379207]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/eggs2.jpeg" alt="Image"></figure><p><strong>Eggs</strong><br>12 AED<br>Added on: 27/04/2019<br>Expiry date: 30/04/2019<br>Store Name: Green Granite Party</p>')
+
+        L.marker([24.519048, 54.379207]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/potato.jpeg" alt="Image"></figure><p><strong>Potatoes</strong><br>13 AED<br>Added on: 28/04/2019<br>Expiry date: 31/04/2019<br>Store Name: Fatima Market</p>')
+
+        L.marker([24.499057, 54.404540]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/onion.jpg" alt="Image"></figure><p><strong>Onions</strong><br>14 AED<br>Added on: 27/04/2019<br>Expiry date: 28/04/2019<br>Store Name: Carefour</p>')
+
+        L.marker([24.423494, 54.438334]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/beef.jpeg" alt="Image"></figure><p><strong>Beef</strong><br>40 AED<br>Added on: 26/04/2019<br>Expiry date: 27/04/2019<br>Store Name: Baqala Grocery Store</p>')
+
+        L.marker([24.426496, 54.407692]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/beef2.jpg" alt="Image"></figure><p><strong>Beef</strong><br>40 AED<br>Added on: 26/04/2019<br>Expiry date: 27/04/2019<br>Store Name: Almushrif supermarket</p>')
+
+        L.marker([24.442128, 54.370908]).addTo(mymap)
+          .bindPopup('<figure class="image is-96x96"><img src="images/apple.jpeg" alt="Image"></figure><p><strong>Apple</strong><br>40 AED<br>Added on: 26/04/2019<br>Expiry date: 27/04/2019<br>Store Name: Al Tashrif Grocery</p>')
+
+        mymap.on('click', onMapClick);
+      </script>
+
+    </div>
+
+  </section>
+
+
+  <section class="section" id="list-section">
+
+    <div class="container">
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-96x96">
+              <img src="images/banana1.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Banana</strong>
+                <br>
+                <del>13 AED</del>
+                <br>
+                10 AED
+                <br>
+                Added on: 27/04/2019
+                <br>
+                Expiry date: 28/04/2019
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-96x96">
+              <img src="images/eggs1.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Eggs</strong>
+                <br>
+                <del>15 AED</del>
+                <br>
+                12 AED
+                <br>
+                Added on: 27/04/2019
+                <br>
+                Expiry date: 29/04/2019
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-96x96">
+              <img src="images/orange.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Oranges</strong>
+                <br>
+                <del>30 AED</del>
+                <br>
+                25 AED
+                <br>
+                Added on: 26/04/2019
+                <br>
+                Expiry date: 28/04/2019
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-96x96">
+              <img src="images/chicken1.jpeg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Chicken</strong>
+                <br>
+                <del>55 AED</del>
+                <br>
+                40 AED
+                <br>
+                Added on: 27/04/2019
+                <br>
+                Expiry date: 28/04/2019
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+  <% include partials/footer %>
+</body>
+<% include partials/script %>
+
+</html>
