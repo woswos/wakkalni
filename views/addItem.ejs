@@ -22,7 +22,7 @@
             <div class="field" clconst Clarifai = require('clarifai');
             ass="wrapper">
               <input type="file" id="food-file" placeholder="Filename" size="100" onchange="previewFile()"/>
-              <button onclick="predict_click($('#food-file').val(), 'file'); return false;">Get my Nutritional Breakdown!</button>
+              <!--<button onclick="predict_click($('#food-file').val(), 'file'); return false;">Get my Nutritional Breakdown!</button>-->
             </div>
 
               <div class="field">
@@ -42,7 +42,7 @@
       </div>
 
 
-      <form method="POST" action="/submit/additem">
+      <form method="GET" action="/userList">
         <div class="field">
           <label class="label">Name of the product</label>
           <div class="control">
@@ -85,7 +85,6 @@
 
     </div>
   </section>
-  <% include partials/footer2 %>
 </body>
 <% include partials/script %>
 

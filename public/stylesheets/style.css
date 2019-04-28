@@ -1,24 +1,33 @@
+html,section {
+background-color:#ffc03d;
+}
+
+#main-page {
+  margin-top: 50px;
+  height: 100vh;
+}
+
 #foot {
   position: fixed;
   bottom: 0;
   margin-bottom: 0;
   width: 100%;
-  background-color: purple;
-  color: white;
+  background-color: #DCDCDC;
+  color: black;
   border-radius: 0;
 }
 
 #footer-inside {
   margin-left: 5.5vh;
-  background-color: purple;
-  color: white;
+  background-color: #DCDCDC;
+  color: black;
   border-radius: 0;
 }
 
 #footer-inside2 {
   margin-left: 4vh;
-  background-color: purple;
-  color: white;
+  background-color: #DCDCDC;
+  color: black;
   border-radius: 0;
 }
 
@@ -44,6 +53,8 @@
 #logo {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 150px;
+
 }
 
 #upload-box {
@@ -89,4 +100,18 @@
 
 .no-padding {
   padding: 0px;
+}
+
+#submit-button {
+  background-color: #DCDCDC;
+}
+
+#details-text {
+  position: absolute;
+  margin-top: 350px;
+}
+
+#filter-button {
+  position: absolute;
+  margin-top:0px;
 }
