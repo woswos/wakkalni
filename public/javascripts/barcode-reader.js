@@ -22,7 +22,7 @@ function previewFile() {
 }
 
 function showInfo() {
-  const barcode_button = document.getElementsByClassName('barcode-button')[0]
+  const barcode_button = document.getElementById('fresh-button')
   const type = barcode_button.getAttribute('data-type')
   const img = document.getElementById("barcode-img")
 
@@ -38,6 +38,8 @@ function showInfo() {
     $("div.preview-barcode").append('<label class="label">How can you tell if it\'s gone bad?</label>')
     $('div.preview-barcode').append('<figure class="image is-128*128"><img src="images/avocado-ripeness.jpg" alt="Image"></figure>')
     $("div.preview-barcode").append("<p>Ripe avocados are dark green to greenish-brown, and an avocado that is dark brown to black is rotten. Avocados reach peak ripeness just before they begin to rot. If the avocado has only slightly rotten parts inside, it's still good to eat.</p>")
+
+    $('#fresh-button').remove();
 /*
     if (`${code}` == "ABC-abc-1234") {
       $("div.preview-barcode").append('<label class="label">Barcode: ' + `${code}` + '</label>')
@@ -97,6 +99,5 @@ function doPredict(value) {
 
 function fillInput() {
   document.getElementById("inputItemName").value = "Avocado"
-  var elem = document.getElementById("fresh-button");
-  elem.remove()
+  $("#fresh-button").remove()
 }
