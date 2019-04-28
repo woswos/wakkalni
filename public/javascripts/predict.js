@@ -1,6 +1,12 @@
 
 // import clarifai_app from "./../../clarifai_app.js"
+const CLARIFAI = require('clarifai')
 
+var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
+
+var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
+
+var clarifai_app = new CLARIFAI.App({apiKey: myClarifaiApiKey});
 /*
   Purpose: Pass information to other helper functions after a user clicks 'Predict'
   Args:

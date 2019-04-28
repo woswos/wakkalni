@@ -8,13 +8,7 @@ var indexRouter = require('./routes/index');
 var submitRouter = require('./routes/submit');
 
 const CLARIFAI = require('clarifai')
-
 var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
-
-var app = new CLARIFAI.App({apiKey: myClarifaiApiKey});
-
-var myClarifaiApiKey = 'b3b671eb256c4f8488fd91e038c87f73';
-
 var clarifai_app = new CLARIFAI.App({apiKey: myClarifaiApiKey});
 
 var app = express();
